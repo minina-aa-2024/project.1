@@ -1,0 +1,26 @@
+.about{
+    display: flex;
+    gap: 10px;
+   }
+   .about__wrap-right{
+    width: 500px;
+    flex-shrink: 0;
+   }
+   .about{
+    background-color: rgb(255, 255, 255);
+     color: rgb(255, 255, 255);
+     padding: 10px;
+    }
+    .about__button{
+        display: block;
+        padding: 10px;
+        color: rgb(254, 254, 254);
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-top: auto;
+        margin-right: auto;
+       }
+       .about__wrap-left{
+        display: flex;
+        flex-direction: column;
+       }
