@@ -15,7 +15,9 @@
            text-decoration: none;
            line-height: 1.2;
            font-weight: bold;
+           transition: 0.25s ease;
        }
+       .menu__link:hover
 
        .header__login {
            display: inline-block;
@@ -42,4 +44,32 @@
            align-items: center;
            padding: 20px 20px; 
        }
-      
+     .header__button{
+        width: 120px;
+        height: 45px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 30px;
+        color: #FFF;
+        background-color: #92429E;
+        border-radius: 30px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        transition: all .5s ease; 
+     }
+     .header__button:hover {
+        letter-spacing: 2px; 
+        background-color: #92429E;
+        color: #fff;
+        box-shadow: #92429E 0px 7px 29px 0px;
+       }
+    .header__button:active { 
+        letter-spacing: 2px;
+        background-color: #92429E;
+        color:#fff;
+        box-shadow: #92429E 0px 0px 0px 0px;
+        transform: transleteY(10px);
+        transition: 100ms;
+       }
