@@ -1,24 +1,65 @@
 .footer {
-    margin-top: 100px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    padding-top: 0.5spx;
+    padding-bottom: 1px;
     background-color: #92429E;
-}
-
-.footer__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    list-style: none;
 }
 
 .footer__logo {
-    font-size: 32px;
-    line-height: 39px;
+   position: relative;
+   left: 30px;
+   bottom: -50px;
+
 }
+
 
 .footer__copy {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
+    color: rgb(255, 255, 255);
+    
+}
+
+footer p {
+    color: #fff;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-left: 40px;
+} 
+
+.men li a {
+    font-size: 1.4em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.men li a:hover {
+    opacity: 1;
+}
+.men{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.men li{
+    list-style: none;
+}/*удалить черные маркеры*/
+footer .wave{
+    position: absolute;/*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: src="images/wave.png";/*картинка волны*/
+    background-size: 1000px 100px;/*ширина и высота волны*/
 }

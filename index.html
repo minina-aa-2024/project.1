@@ -11,8 +11,8 @@
 </head>
 <body>
     <header class="header container">
-        <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="90">
-        <h1 class="header__title">Рекламное агентство</h1>
+        <div class="header-block">
+        <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="140">
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item menu__item--active">
@@ -25,21 +25,30 @@
                     <a class="menu__link" href="#">Портфолио</a>
                 </li>
                 <li class="menu__item">
+                    <a class="menu__link" href="#">Наша команда</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="menu__item">
                     <a class="menu__link" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
         <a class="header__button" href="login.html">Вход</a>
+        </div>
     </header>
     <main class="main container"> 
 <section class="about-us">
+    <div class="about-us-block">
     <div class="about__wrap-left">
         <h2 class="about-us__title"> Выделяйся из толпы! Рекламное агентство "TRiO" Размещение рекламы в г. Йошкар-Ола</h2> 
         <p class="about__us"> Создание и продвижение уникального имиджа вашего бренда!</p>
             <a href="#" class="btn">Заказать услугу</a>
     </div>
     <div class="about__wrap-right">
-        <img class="about-us__image" src="images/brand people.png" alt="люди" width="430" height="430">
+        <img class="about-us__image" src="images/brand people.png" alt="люди" width="600" height="600">
+    </div>
     </div>
 </section>
     <section class="services" id="services">
@@ -97,7 +106,7 @@
                 <a class="services__link" href="#">Узнать подробнее</a>
             </li>
             <li class="services__item"> 
-                <img src="images/icons8-public-relation-96.png" alt="" width="80" height="80">
+                <img src="images/icons8-public-relation-96.png" alt="что-то" width="80" height="80">
                 <h3 class="services__title">PR компании</h3>
                 <span class="services__search">От 50.000р</span>
                 <a class="services__link" href="#">Узнать подробнее</a>
@@ -105,102 +114,110 @@
         </ul>
     </section>
     <section class="team">
+    <div class="about-us-block">
         <div class="team__wrap-left">
          <h2 class="team__title"> О нашей команде</h2> 
          <p class="team__about"> В нашем маркетинговом агентстве мы объединяем опытных профессионалов, работающих в разных областях: от цифрового маркетинга до стратегического планирования. Наша команда состоит из креативных дизайнеров, аналитиков, контент-менеджеров и специалистов по SEO, которые работают вместе, чтобы достичь максимальных результатов для наших клиентов.</p>    
         </div>  
         <div class="team__wrap-right">
-           <img class="team__image" src="images/about us.png" alt="команда" width="450" height="450">
+           <img class="team__image" src="images/about us.png" alt="команда" width="600" height="600">
         </div>
+    </div>
     </section>
-       <section class="advantages">
-           <div class="advantages">
-               <h2 class="advantages__title_1">Наши преимущества</h2> 
-               <h3 class="advantages__title">Индивидуальный подход</h3>
-               <p class="advantages__completely">Мы предлагаем персональный подход к каждому клиенту и адаптируем свои услуги под конкретные нужды заказчика.</p>
-           </div>
-           <div class="advantages">
-               <h3 class="advantages__title">Профессионализм</h3>
-               <p class="advantages__completely">У нас работают профессионалы, имеющие опыт в своей сфере. К тому все специалисты молоды и разбираются в популярных темах нынешнего поколения, значит, что ваша реклама будет актуальна.</p>
-           </div>
-           <div class="advantages">
-               <h3 class="advantages__title">Комплексные услуги</h3>
-               <p class="advantages__completely">Мы предлагаем широкий спектр услуг: от стратегического планирования до разработки собственного бренда и реализации рекламной кампании и анализа ее эффективности.</p>
-           </div>
-           <div class="advantages">
-               <h3 class="advantages__title">Креативность</h3>
-               <p class="advantages__completely">Агентство предлагает нестандартные и креативные подходы к рекламе, что помогает выделяться на фоне конкурентов.</p>
-           </div>
-           <div class="advantages">
-               <h3 class="advantages__title">Результативность</h3>
-               <p class="advantages__completely">"TRiO" ориентируется на достижение измеримых результатов и активное использование аналитики для оптимизации рекламных кампаний.</p>
-           </div>
-           <div class="advantages">
-               <h3 class="advantages__title">Сетевые связи</h3>
-               <p class="advantages__completely">Наше агентство обладает большим наличием контактов и связей с медиа, инфлюенсирами и другими партнерами, что поможет привлечь их аудиторию и эффективно продвинет бренд.</p>
-           </div>
-           <img class="advantages__image" src="images/seo.png" alt="Преимущества команды" width="420" height="420">
-       </section>
-       <section class="portfolio">
-           <div class="portfolio">
-               <h2 class="portfolio__title">Портфолио</h2>
-               <p class="portfolio__projct">Здесь представлены проекты, которыми мы гордимся.</p>
-               <div class="project-1__content">
-                   <div class="content">
-                   <a class="project-1__button" href="banner">
-                       <img class="project-1__image" src="images/banner.jpg" alt="банер" width="150" height="150">
-                   </a>
-                       <h3 class="project-1__title">"Refreshing stuff"</h3>
-                       <p class="project-1__about">Компания напитков "Oasis" сделала запрос на яркий летний банер, который будет расположе в центре города, чтобы каждый мог заметить и оценит новый летний вкус напитка</p>
-                   </div>
-               </div>
-                <div class="project-2__content">
-                   <div class="content">
-                       <a class="project-2__button" href="bloknot">
-                       <img class="project-2__image" src="images/bloknot.jpg" alt="блокнот"width="150" height="150">
-                   </a>
-                   <h3 class="project-2__title">"Your Brand"</h3>
-                       <p class="project-2__about">Бухгалтерской компании "Your Brand" не хватало личного мерча, чтобы повысить уровень копоративной культуры своей компании и выделиться на фоне конкурентов, наш клиент попросил создать дизайн для яркого набора из блокнота, ручки и термоса. Через некоторое время компания оставила нам положительный отзыв и сообщила, что клиентов стало больше, а сотрудники стали работать в 2 раза лучше. </p>
-                   </div>
-               </div>
+     
+<section> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <div class="support-block">
+            <img src="images/handshake.jpg" alt="сделка" class="laptop-image">
+            <div class="support-text">
+                <h1 class="text-our-advantages">Наши преимущества</h1>
+                <p1 class="text-trio">Почему стоит выбирать TRiO? </p1>
+                <ul class="checklist">
+                    <li>Индивидуальный подход</li>
+                    <li>Профессионализм</li>
+                    <li>Широкий спектр услуг</li>
+                    <li>Креативность</li>
+                </ul>
             </div>
-               <div class="project-3__content">
-                   <div class="content">
-                       <a class="project-3__button" href="brandd">
-                       <img class="project-3__image" src="images/brandd.jpg" alt="фирменный стиль"width="150" height="150">
-                   </a>
-                       <h3 class="project-3__title">"BCG"</h3>
-                       <p class="project-3__about">Большая команда BCG сделала запрос на актуализацию и обновление своего форменного стиля, попросила внедрить современные шрифт, а также разработать дизай своей продукции. За основу мы взяли главную цель компании - борьбу за экологичность и спасение земли от загрязнения. В итогу получили товары, которые привлекают своим дизайном и качеством.</p>
-                   </div>
-               </div>
-               <div class="project-4__content">
-                   <div class="content">
-                       <a class="project-4__button" href="ban">
-                       <img class="project-4__image" src="images/ban.jpg" alt="плакат"width="150" height="150">
-                   </a>
-                       <h3 class="project-4__title">"Volvic"</h3>
-                       <p class="project-4__about">Компания напитков "Volvic" сделала запрос на яркиq банер, который будет расположен на станции метро. В связи с этим в ТЗ указали, что плакат должен привлекать всеобщее внимание дае, когда вагон будет в движении. Мы разработали дизайн основываясь на новом вкусе напитка.</p>
-                   </div>
-               </div>
-           <div class="project-5__content">
-                   <div class="content">
-                       <a class="project-5__button" href="vizitka">
-                       <img class="project-5__image" src="images/vizitka photo.jpg" alt="визитка"width="150" height="150">
-                   </a>
-                       <h3 class="project-5__title">"Cleo"</h3>
-                       <p class="project-5__about">Бренд украшений "Cleo" попросил нас создать для низ визитные карточки, которые они могли мы оправлять своим клиентам вместе с украшениями. Вложив в дизайн всю егкость и элегантность, поиграв с текстурами и цветами, на выходе бренд получил нежные открытки с золотыми надписями, что подчеркнуло стиль, а клиентов стало больше.</p>
-                   </div>
-               </div>
-                <div class="project-6__content">
-                   <div class="content">
-                       <a class="project-6__button"  href="plakatic">
-                       <img class="project-6__image" src="images/plakatic.jpg" alt="стенд"width="150" height="150">
-                   </a>
-                       <h3 class="project-6__title">"MyCoffee"</h3>
-                       <p class="project-6__about">Кафе "MyCoffee" сделало запрос на стенд с новыми сезонными напитками, чтобы привлечь клиентов заинтересованных в новых вкусах. Изучив уже сформированный фирменный стиль, мы создали рекламный баннер в приятных пастельных цветах.</p>
-                   </div>
-               </div>
-           </div>
+        </div>
+</section>
+ <section>    
+<body>
+    <div class="banner">
+        <div class="text">
+            <h2 class="get-sale">Закажи рекламную компанию и получи скидку 25% уже сейчас!</h2>
+            <button class="get-button">Хочу скидку!</button>
+        </div>
+        <div class="images">
+            <img src="images/landing-page.png" alt="баннер" class="chart-image" width="150" height="150">
+            <img src="images/advertising (3).png" alt="Реклама" class="chart-image" width="150" height="150">
+        </div>
+    </div>
+</body>
+       <section> 
+        <section class="container-portfolio">
+            <h1 class="portfolio-1">Портфолио</h1>
+            <p class="portfolio-2">Работы, которыми мы гордимся</p>
+            <div class="card-container-1">
+                <div class="card-portfolio">
+                    <img class="portfolio-img" src="images/vizitka photo.jpg" alt="Визитка клио">
+                    <h2 class="portfolio-3">Cleo</h2>
+                    <p class="portfolio-4">Бренд украшений "Cleo" попросил нас создать для них визитные карточки, которые они могли мы оправлять своим клиентам вместе с украшениями</p>
+                </div>
+                <div class="card-portfolio">
+                    <img src="images/icecream.jpg" alt="Постер мороженое">
+                    <h2 class="portfolio-3">Айс</h2>
+                    <p class="portfolio-4">Компания мороженого "Айс" сделала запрос на яркий летний банер, который будет расположе в центре города, чтобы каждый мог заметить и оценит новый летний вкус любимого лакомства</p>
+                </div>
+                <div class="card-portfolio">
+                    <img src="images/merch.jpg" alt="Мерч">
+                    <h2 class="portfolio-3">BiSCUiT BASKET</h2>
+                    <p class="portfolio-4">Кондитерская "BiSCUiT BASKET" сделала запрос на разработатку дизайна для своего фирменного стиля. Как итог: получилися яркий узнаваемый мерч кондитерской</p>
+                </div>
+            </div>
+        </section> 
+       <section> 
+    <div class="price-table">
+            <h1 class="table-price">Выгодное предложение</h1>
+            <h2 class="our-price">Пакеты услуг</h2>
+            <div class="plans">
+                <div class="plan">
+                <h3 class="title-plan">Стартовый</h3>
+                <p class="text-price">в месяц</p>
+                <p class="price">10,000 ₽</p>
+                <p class="text-price">Рекламная кампания в соц сетях</p>
+                <p class="text-price">3 баннера</p>
+                <p class="text-price">Результы раз в месяц</p>
+                <p class="text-price">Поддержка по почте</p>
+                <button class="buy">Заказать сейчас</button>
+            </div>
+            <div class="plan standard">
+                <h3 class="title-plan">Стандарт</h3>
+                <p class="text-price">в месяц</p>
+                <p class="price">25,000 ₽</p>
+                <p class="text-price">+ "Стартовый" пакет</p>
+                <p class="text-price">Реклама в (Google Ads, Яндекс.Директ)</p>
+                <p class="text-price">5 баннеров и 2 видеоролика</p>
+                <p class="text-price">Результаты раз в две недели</p>
+                <p class="text-price">Поддержка по телефону и почте</p>
+                <button class="buy">Заказать сейчас</button>
+            </div>
+            <div class="plan premium">
+                <h3 class="title-plan">Премиум</h3>
+                <p class="text-price">в месяц</p>
+                <p class="price">50,000 ₽</p>
+                <p class="text-price">+ "Стандартный" пакет</p>
+                <p class="text-price">Контент-план + публикация постов</p>
+                <p class="text-price">10 баннеров и 5 видеороликов</p>
+                <p class="text-price">Консультации по стратегии продвижения</p>
+                <p class="text-price">Результы каждую неделю</p>
+                <p class="text-price">Полное сопровождение рекламных кампаний</p>
+                <button class="buy">Заказать сейчас</button>
+            </div>
+        </div>
+    </div>
        </section>
        <section class="section card"  id="card">
         <h2 class="section__title">Отзывы наших клиентов</h2>
@@ -242,21 +259,16 @@
     </main>
     
        <footer class="footer container">
-        <ul class="footer">
-            <li class="footer__item footer__item--active">
-                <a class="footer__link" href="#">Услуги</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">О нас</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Портфолио</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Контакты</a>
-            </li>
-            <p class="footer__copy">&copy; TRiO 2025</p>
+        <img class="footer__logo" src="images/newlogo.jpg" alt="Логотип" width="120">
+        <ul class="men">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Наша команда</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">+71234567890</a></li>
         </ul>
+        <p class="footer__copy"> &copy; TRiO 2025</p>
        </footer>
        <form action="/submit" method="get" class="form-container">
            <label for="name" class="form-label">Ваше имя:</label>
@@ -265,9 +277,10 @@
            <label for="email" class="form-label">Электронная почта:</label>
            <input type="email" id="email" name="email" placeholder="example@email.com" class="form-input">
            
-           <label for="recall" class="form-label">Отзыв:</label>
+           <label for="recall" class="form-label">Ваш вопрос:</label>
            <textarea name="comment" placeholder="Что вас интересует?" class="form-extrea"></textarea>
            
            <button type="submit" class="form-button">Отправить</button>
     </form>
+    
 </body>
