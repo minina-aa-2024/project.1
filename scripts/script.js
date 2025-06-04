@@ -12,11 +12,50 @@ document.addEventListener("DOMContentLoaded", () => {
     // * 3.3.1.1. Скрываем элемент с описанием.
     // * 3.3.2. Нет: продолжаем.
     // * 4. Конец
-    const intensiveImg = document.querySelector(".services__list");
-    console.log(intensiveImg);
-    intensiveImg.addEventListener('mouseenter', () => {
-         console.log("Мышка наведена на изображение, показываем текст");
-     });
+let description = [
+    "Формат: Различные размеры (A3, A2, A1, билборды 3×6 м), горизонтальные и вертикальные. Материалы: Пластик, баннерная ткань, световые панели (с подсветкой). Гарантируем яркий дизайн и заметность.",
+    "Формат: Плакаты (А3, А2), наклейки на стены и двери, цифровые экраны. Как преподносим: Ваша реклама работает 24/7 – люди в лифте смотрят на неё в среднем 15-30 секунд. Можно таргетировать по районам и типам зданий (жилые, офисные)",
+    "Формат: А4, А5, евробуклет (с фальцовкой), полноцветная печать. Как преподносим: Распространяем в местах скопления ЦА (мероприятия, выставки, ТЦ) или доставляем под конкретную аудиторию.",
+    "Формат: Стандарт (90×50 мм), нестандартные формы (круглые, с вырубкой). Как преподносим: Делаем стильные и запоминающиеся визитки, которые хочется сохранить. Быстрая печать (от 1 дня).",
+    "Формат: А5, А6, А4 (односторонние или двусторонние). Как преподносим: Раздаем на улицах, в почтовые ящики, на мероприятиях. Можно заказать адресную рассылку по нужным районам.",
+    "Виды продукции: Каталоги, брошюры, плакаты, календари, наклейки, открытки. Как преподносим: Подбираем оптимальный формат под ваши задачи – от рекламных материалов до корпоративной полиграфии.",
+    "Что входит: Аудит сайта, подбор ключевых слов, оптимизация контента, технические доработки, ссылочное продвижение. Как преподносим: Увеличиваем видимость сайта в Google и Яндекс, привлекаем органический трафик и клиентов.",
+    "Что входит: Публикации в СМИ, работа с блогерами, организация мероприятий, создание инфоповодов. Как преподносим: Формируем положительный имидж компании через медиа, соцсети и партнерские проекты."
+];
+    const intensiveImg = document.querySelectorAll(".services__item");
+    intensiveImg.forEach((item, index) => {
+        let imgbox = item.querySelector(".services__item__img");
+        if (imgbox){
+            imgbox.addEventListener('mouseenter', () => {
+                let p = document.createElement("p");
+                p.classList.add("services__item__description");
+                p.innerText = description[index];
+                item.append(p);
+            });
+            imgbox.addEventListener('mouseleave', () => {
+                item.querySelector(".services__item__description").remove();
+            });
+        }
+        
+    });
+    /*intensiveImg.addEventListener('mouseenter', () => { 
+        intensiveImg.forEach((item, index) => {
+            console.log(item);
+            /*const intensiveText = document.querySelectorAll(".services__list")
+            item.addEventListener('mouseenter', () => {
+              item.style.opacity = 0.5;
+              intensiveText[index].removeAttribute('hidden');
+            });
+        
+            item.addEventListener('mouseleave', () => {
+              item.style.opacity = 1;
+              intensiveText[index].setAttribute('hidden', true);
+            });
+        });  
+    });   
+         console.log("Мышка наведена на изображение, показываем текст");*/
+});
+
 
       
-});
+
