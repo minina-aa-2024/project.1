@@ -12,20 +12,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // * 3.3.1.1. Скрываем элемент с описанием.
     // * 3.3.2. Нет: продолжаем.
     // * 4. Конец
-let description = [
-    "Формат: Различные размеры (A3, A2, A1, билборды 3×6 м), горизонтальные и вертикальные. Материалы: Пластик, баннерная ткань, световые панели (с подсветкой). Гарантируем яркий дизайн и заметность.",
-    "Формат: Плакаты (А3, А2), наклейки на стены и двери, цифровые экраны. Как преподносим: Ваша реклама работает 24/7 – люди в лифте смотрят на неё в среднем 15-30 секунд. Можно таргетировать по районам и типам зданий (жилые, офисные)",
-    "Формат: А4, А5, евробуклет (с фальцовкой), полноцветная печать. Как преподносим: Распространяем в местах скопления ЦА (мероприятия, выставки, ТЦ) или доставляем под конкретную аудиторию.",
-    "Формат: Стандарт (90×50 мм), нестандартные формы (круглые, с вырубкой). Как преподносим: Делаем стильные и запоминающиеся визитки, которые хочется сохранить. Быстрая печать (от 1 дня).",
-    "Формат: А5, А6, А4 (односторонние или двусторонние). Как преподносим: Раздаем на улицах, в почтовые ящики, на мероприятиях. Можно заказать адресную рассылку по нужным районам.",
-    "Виды продукции: Каталоги, брошюры, плакаты, календари, наклейки, открытки. Как преподносим: Подбираем оптимальный формат под ваши задачи – от рекламных материалов до корпоративной полиграфии.",
-    "Что входит: Аудит сайта, подбор ключевых слов, оптимизация контента, технические доработки, ссылочное продвижение. Как преподносим: Увеличиваем видимость сайта в Google и Яндекс, привлекаем органический трафик и клиентов.",
-    "Что входит: Публикации в СМИ, работа с блогерами, организация мероприятий, создание инфоповодов. Как преподносим: Формируем положительный имидж компании через медиа, соцсети и партнерские проекты."
-];
+    let description = [
+        "Формат: Различные размеры (A3, A2, A1, билборды 3×6 м), горизонтальные и вертикальные. Материалы: Пластик, баннерная ткань, световые панели (с подсветкой). Гарантируем яркий дизайн и заметность.",
+        "Формат: Плакаты (А3, А2), наклейки на стены и двери, цифровые экраны. Как преподносим: Ваша реклама работает 24/7 – люди в лифте смотрят на неё в среднем 15-30 секунд. Можно таргетировать по районам и типам зданий (жилые, офисные)",
+        "Формат: А4, А5, евробуклет (с фальцовкой), полноцветная печать. Как преподносим: Распространяем в местах скопления ЦА (мероприятия, выставки, ТЦ) или доставляем под конкретную аудиторию.",
+        "Формат: Стандарт (90×50 мм), нестандартные формы (круглые, с вырубкой). Как преподносим: Делаем стильные и запоминающиеся визитки, которые хочется сохранить. Быстрая печать (от 1 дня).",
+        "Формат: А5, А6, А4 (односторонние или двусторонние). Как преподносим: Раздаем на улицах, в почтовые ящики, на мероприятиях. Можно заказать адресную рассылку по нужным районам.",
+        "Виды продукции: Каталоги, брошюры, плакаты, календари, наклейки, открытки. Как преподносим: Подбираем оптимальный формат под ваши задачи – от рекламных материалов до корпоративной полиграфии.",
+        "Что входит: Аудит сайта, подбор ключевых слов, оптимизация контента, технические доработки, ссылочное продвижение. Как преподносим: Увеличиваем видимость сайта в Google и Яндекс, привлекаем органический трафик и клиентов.",
+        "Что входит: Публикации в СМИ, работа с блогерами, организация мероприятий, создание инфоповодов. Как преподносим: Формируем положительный имидж компании через медиа, соцсети и партнерские проекты."
+    ];
     const intensiveImg = document.querySelectorAll(".services__item");
     intensiveImg.forEach((item, index) => {
         let imgbox = item.querySelector(".services__item__img");
-        if (imgbox){
+        if (imgbox) {
             imgbox.addEventListener('mouseenter', () => {
                 let p = document.createElement("p");
                 p.classList.add("services__item__description");
@@ -36,7 +36,7 @@ let description = [
                 item.querySelector(".services__item__description").remove();
             });
         }
-        
+
     });
     /*intensiveImg.addEventListener('mouseenter', () => { 
         intensiveImg.forEach((item, index) => {
@@ -63,53 +63,76 @@ const preloader = document.querySelector(".preloader");
 const content = document.querySelector(".content");
 if (preloader && content) {
     setTimeout(() => {
-       preloader.style.opacity = "0";
-       preloader.style.visibility = "hidden";
-       content.style.display = "block";
-       preloader.remove();
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
+        content.style.display = "block";
+        preloader.remove();
     }, 3000);
 }
 
 const headerMenu = document.querySelector('.header__menu');
-if (headerMenu){
+if (headerMenu) {
     const headerList = headerMenu.querySelector('.menu');
-            const menuData = {
-                link1: {
-                link: '#',
-                title: 'О нас',
-            },
-            link2: {
-                link: '#',
-                title: 'Портфолио',
-            },
-            link3: {
-                link: '#',
-                title: 'Наша команда',
-            },
-            link4: {
-                link: '#',
-                title: 'Отзывы',
-            },
-             link5: {
-                link: '#',
-                title: 'Контакты',
-            },
-             link5: {
-                link: '#',
-                title: 'Услуги',
-            }
+    const menuData = {
+        link1: {
+            link: '#',
+            title: 'О нас',
+        },
+        link2: {
+            link: '#',
+            title: 'Портфолио',
+        },
+        link3: {
+            link: '#',
+            title: 'Наша команда',
+        },
+        link4: {
+            link: '#',
+            title: 'Отзывы',
+        },
+        link5: {
+            link: '#',
+            title: 'Контакты',
+        },
+        link5: {
+            link: '#',
+            title: 'Услуги',
         }
-const createLink = (UrlLink, title) =>{
-    const link = `
+    }
+    const createLink = (UrlLink, title) => {
+        const link = `
             <li class="menu__item"><a href="${UrlLink}" class="menu__link">${title}</a></li>
             `;
-            return link;
-        }
-        for (const linkItem in menuData) {
-            const link = menuData[linkItem];
-            const linkIndex = createLink(link.UrlLink, link.title);
-            headerList.insertAdjacentHTML('beforeend', linkIndex);
+        return link;
+    }
+    for (const linkItem in menuData) {
+        const link = menuData[linkItem];
+        const linkIndex = createLink(link.UrlLink, link.title);
+        headerList.insertAdjacentHTML('beforeend', linkIndex);
 
-        }
+    }
 }
 
+const formApplication = document.querySelector("#dialogApplication");
+if (formApplication) {
+
+ formApplication.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const username = formApplication.querySelector("#username").value;
+    const question = formApplication.querySelector("#question").value;
+    const email = formApplication.querySelector("#email").value;
+
+    const modalMessage = document.querySelector("#application-message");
+
+    if (username.length < 3) {
+        modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+        modalMessage.style.color = "black";
+        return;
+    }
+    modalMessage.textContent = "Заявка отправлена!";
+    modalMessage.style.color = "green";
+    window.localStorage.setItem("username", username);
+    window.localStorage.setItem("question", question );
+    window.localStorage.setItem("email", email);
+});
+}

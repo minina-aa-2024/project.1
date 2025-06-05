@@ -264,7 +264,17 @@
             </ul>
         </section>
     </main>
-    
+
+     <form action="/submit" method="get" id="dialogApplication" class="form-container">
+        <label for="name" class="form-label">Ваше имя:</label>
+        <input type="text"  name="name" placeholder="Имя" id="username" class="form-input" >
+        <label for="email" class="form-label">Электронная почта:</label>
+        <input type="email" name="email" placeholder="example@email.com" id="email" class="form-input">
+        <label for="recall" class="form-label">Ваш вопрос:</label>
+        <textarea name="comment" placeholder="Что вас интересует?" id="question" class="form-extrea"></textarea>
+        <button type="submit" class="form-button">Отправить</button>
+    </form>
+    <p id="application-message" class="application_message"></p>
     <footer class="footer container">
         <img class="footer__logo" src="images/newlogo.jpg" alt="Логотип" width="120">
         <ul class="men">
@@ -277,19 +287,6 @@
         </ul>
         <p class="footer__copy"> &copy; TRiO 2025</p>
     </footer>
-
-    <form action="/submit" method="get" class="form-container">
-        <label for="name" class="form-label">Ваше имя:</label>
-        <input type="text" id="name" name="name" placeholder="Иван Иванов" class="form-input">
-           
-        <label for="email" class="form-label">Электронная почта:</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com" class="form-input">
-           
-        <label for="recall" class="form-label">Ваш вопрос:</label>
-        <textarea name="comment" placeholder="Что вас интересует?" class="form-extrea"></textarea>
-
-        <button type="submit" class="form-button">Отправить</button>
-    </form>
     <script src="scripts/script.js"></script>
 </body>
 </html>
