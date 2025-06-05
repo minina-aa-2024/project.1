@@ -6,18 +6,6 @@
     flex-wrap: wrap;
 }
 
-.menu__link {
-    display: block;
-    padding: 5px;
-    margin: 5px;
-    background-color: rgba(255, 253, 253, 0.99);
-    color: rgb(146, 66, 158);
-    text-decoration: none;
-    line-height: 1.2;
-    font-weight: bold;
-    transition: 0.25s ease;
-    font-size: 25px;
-}
 
 .header__login {
     display: inline-block;
@@ -36,13 +24,6 @@
 .header__title {
     margin: 0;
     color: rgb(146, 66, 158);
-}
-
-.header {
-    display: fixed;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 20px;
 }
 
 .header__button {
@@ -91,5 +72,31 @@
 }
        
 
-       
+.header {
+    background: #ffffff; /*цвет фона шапки*/
+    padding: 30px 100px; /* Внутренние отступы: 30px сверху и снизу, 100px слева и справа */
+    color: #fff; /*цвет текста*/
+    display: flex; /*Используем flexbox для выравнивания в строку*/
+    justify-content: space-between; /* распределяем элементы по ширине*/ 
+    align-items: center; /* выравнивание по вертикали */
+}
+
+.menu {
+    display: flex; ;/*Используем flexbox для выравнивания списка в строку*/
+    justify-content: space-between; /* распределяем элементы по ширине*/ 
+    gap: 40px; /*промежуток между ссылками */
+}
+  .menu__link {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.99);
+    color: rgb(146, 66, 158);
+    text-decoration: none;
+    line-height: 1.2;
+    font-weight: bold;
+    transition: 0.25s ease;
+    font-size: 25px;
+}
+
        

@@ -56,48 +56,7 @@ let description = [
          console.log("Мышка наведена на изображение, показываем текст");*/
 });
 
-const cardsPrice = document.querySelector('.price-table');
-if (cardsPrice) {  
-    const priceList = cardsPrice.querySelector('.price-table');
-    const cardsPriceData = {
-        price1: {
-                level: '– Стартовый –',
-                price: '10 000 ₽',
-                description: 'Рекламная кампания в соц сетях 3 баннера Результы раз в месяц Поддержка по почте   ',
-                button: 'Заказать сейчас'
-            },
-            price2: {
-                level: '– Стандарт –',
-                price: '25 000 ₽',
-                description: '+ "Стартовый" пакет Реклама в (Google Ads, Яндекс.Директ) 5 баннеров и 2 видеоролика Результаты раз в две недели Поддержка по телефону и почте ',
-                button: 'Заказать сейчас'
-            },
-            price3: {
-                level: '– Премиум –',
-                price: '50 000 ₽',
-                description: '+ "Стандартный" пакет Контент-план + публикация постов 10 баннеров и 5 видеороликов Консультации по стратегии продвижения Результы каждую неделю Полное сопровождение рекламных кампаний  ',
-                button: 'Заказать сейчас'
-            }
-        }
-        const createCard = (level, price, description, button) => {
-            const card = `
-            <div class="plans">
-                <p class="title-plan">${level}</p>
-                <p class="price">${price}</p>
-                <p class="text-price">${description}</p>
-                <button class="buy">${button}</button>
-            </div>
-        `;
-        return card;
-    }
 
-        for (const cardKey in cardsPriceData) {
-            const card = cardsPriceData[cardKey];
-            const cardElement = createCard(card.level, card.price, card.description, card.button);
-            priceList.insertAdjacentHTML('beforeend', cardElement);
-       
-        }
-    }
 
 
 const preloader = document.querySelector(".preloader");
@@ -109,5 +68,48 @@ if (preloader && content) {
        content.style.display = "block";
        preloader.remove();
     }, 3000);
+}
+
+const headerMenu = document.querySelector('.header__menu');
+if (headerMenu){
+    const headerList = headerMenu.querySelector('.menu');
+            const menuData = {
+                link1: {
+                link: '#',
+                title: 'О нас',
+            },
+            link2: {
+                link: '#',
+                title: 'Портфолио',
+            },
+            link3: {
+                link: '#',
+                title: 'Наша команда',
+            },
+            link4: {
+                link: '#',
+                title: 'Отзывы',
+            },
+             link5: {
+                link: '#',
+                title: 'Контакты',
+            },
+             link5: {
+                link: '#',
+                title: 'Услуги',
+            }
+        }
+const createLink = (UrlLink, title) =>{
+    const link = `
+            <li class="menu__item"><a href="${UrlLink}" class="menu__link">${title}</a></li>
+            `;
+            return link;
+        }
+        for (const linkItem in menuData) {
+            const link = menuData[linkItem];
+            const linkIndex = createLink(link.UrlLink, link.title);
+            headerList.insertAdjacentHTML('beforeend', linkIndex);
+
+        }
 }
 
