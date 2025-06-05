@@ -686,7 +686,7 @@
   width: 20px;/* Ширина кругов */
   height: 20px;/* Высота кругов */
   border-radius: 100%;/* задаем круг */
-  background-color: #141414;/* Цвет кругов */
+  background-color:#92429E;/* Цвет кругов */
   margin: 35px5px;/* Отступы вокруг кругов */
 }
 .dot1 {
