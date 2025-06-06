@@ -76,26 +76,26 @@ if (headerMenu) {
     const menuData = {
         link1: {
             link: '#',
-            title: 'О нас',
+            title: 'Главная',
         },
         link2: {
-            link: '#',
-            title: 'Портфолио',
+            link: '#team',
+            title: 'О нас',
         },
         link3: {
-            link: '#',
-            title: 'Наша команда',
+            link: '#portfolio',
+            title: 'Портфолио',
         },
         link4: {
-            link: '#',
+            link: '#advantages',
+            title: 'Преимущества',
+        },
+        link5: {
+            link: '#card',
             title: 'Отзывы',
         },
-        link5: {
-            link: '#',
-            title: 'Контакты',
-        },
-        link5: {
-            link: '#',
+        link6: {
+            link: '#services',
             title: 'Услуги',
         }
     }
@@ -107,7 +107,7 @@ if (headerMenu) {
     }
     for (const linkItem in menuData) {
         const link = menuData[linkItem];
-        const linkIndex = createLink(link.UrlLink, link.title);
+        const linkIndex = createLink(link.link, link.title);
         headerList.insertAdjacentHTML('beforeend', linkIndex);
 
     }

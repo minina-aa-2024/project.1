@@ -126,6 +126,9 @@
     margin-top: 46px;
     padding-right: 0.2;
     list-style: none;
+    position: relative;
+    right: 0px;
+    left: 70px;
 }
 
 .card__item {
